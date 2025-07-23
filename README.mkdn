@@ -1,0 +1,15 @@
+# Initialize local repository
+```
+repo init -u https://github.com/Evolution-X-Devices/tensor_pixel_kernel_manifest -b bka --git-lfs
+```
+
+# Sync up
+```
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+
+# Build
+
+```bash
+./build_<family>.sh 
+```
